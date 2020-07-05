@@ -7,13 +7,16 @@
 </head>
 <body>
     <script>
-       var userAnswer=prompt("Guess what James and Bry are having for July 4th dinner? (1 for Ribeye Steak, 2 for portobello mushroom");
-        if (userAnswer === 1) {
+       var userAnswer = prompt("Guess what James and Bry are having for July 4th dinner? (1 for Ribeye Steak, 2 for portobello mushroom");
+       console.log(userAnswer)
+        if (parseint(userAnswer) === 1) {
             alert("Sorry, wrong")
-        } else if (userAnswer === 2) {
+        } else if (parseint(userAnswer) === 2) {
             alert("Sorry, wrong")
-        } else if (userAnswer === 3) {
+        } else if (parseint(userAnswer) === 3) {
            alert("Correct! Trick question, it's both! James is having steak, and Bry is having stuffed portobello mushrooms!") 
+        } else {
+            alert("Sorry, invalid input")
         }
         </script>
 </body>
